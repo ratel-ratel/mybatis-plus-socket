@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nice.mapper.ReplyInfoMapper">
+  <resultMap id="BaseResultMap" type="com.nice.domain.ReplyInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="app_id" jdbcType="VARCHAR" property="appId" />
+    <result column="reply_key" jdbcType="VARCHAR" property="replyKey" />
+    <result column="message_type" jdbcType="VARCHAR" property="messageType" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="picture_url" jdbcType="VARCHAR" property="pictureUrl" />
+    <result column="created_by" jdbcType="BIGINT" property="createdBy" />
+    <result column="created_time" jdbcType="BIGINT" property="createdTime" />
+    <result column="updated_by" jdbcType="BIGINT" property="updatedBy" />
+    <result column="updated_time" jdbcType="BIGINT" property="updatedTime" />
+    <result column="deleted" jdbcType="INTEGER" property="deleted" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, open_id, app_id, reply_key, message_type, content, title, description, url, picture_url, 
+    created_by, created_time, updated_by, updated_time, deleted, remark
+  </sql>
+</mapper>
